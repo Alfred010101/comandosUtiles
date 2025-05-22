@@ -1,0 +1,18 @@
+**** Clona el repositorio oficial de Git
+git clone https://github.com/git/git.git 
+~/git-source
+cd ~/git-source/contrib/credential/libsecret
+
+**** Instala las dependencias necesarias
+sudo dnf install libsecret-devel gcc make
+
+
+**** Compila el helper
+make
+
+
+**** Copia el binario a /usr/libexec/git-core/
+sudo cp git-credential-libsecret /usr/libexec/git-core/
+
+**** Configura Git para usar el helper
+git config --global credential.helper /usr/libexec/git-core/git-credential-libsecret
