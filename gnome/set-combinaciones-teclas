@@ -1,0 +1,8 @@
+**** Ver configuracion actual ****
+gsettings get org.gnome.desktop.wm.keybindings unmaximize
+gsettings get org.gnome.desktop.wm.keybindings minimize
+
+**** Settear nuevos valores ****
+gsettings set org.gnome.desktop.wm.keybindings unmaximize "['<Alt>F5']"
+gsettings set org.gnome.desktop.wm.keybindings minimize "['<Super>Down']"
+

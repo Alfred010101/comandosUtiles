@@ -1,0 +1,2 @@
+<<< lista las conbinaciones de teclas activas en el sistema >>>
+gsettings list-recursively | grep -i "keybinding" | grep  H
